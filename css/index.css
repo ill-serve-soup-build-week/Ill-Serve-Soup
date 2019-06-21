@@ -1,0 +1,70 @@
+.box-holder {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  height: 1000px;
+  width: 100%;
+}
+.container-box {
+  border: 0.2px blur black;
+  width: 20%;
+  height: 40%;
+  margin-top: 10%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login-box-holder {
+  padding-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  justify-content: center;
+  height: 40%;
+}
+.login-h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10%;
+  color: #000080;
+}
+.remember-me {
+  margin-left: 8%;
+  color: gray;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  font-size: 0.9rem;
+}
+.input-forms {
+  margin: 1%;
+  width: 80%;
+  height: 32%;
+  font-size: 1.4rem;
+  opacity: 60%;
+  border-radius: 8px;
+  border: 0.5px solid grey;
+}
+h4 {
+  text-align: right;
+  margin-right: 4%;
+  color: gray;
+  text-decoration: underline;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+.signup-button {
+  width: 80%;
+  margin-top: 3%;
+  height: 50px;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, dodgerblue 0%, #000080 100%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+button:hover {
+  font-size: 0.9rem;
+}
