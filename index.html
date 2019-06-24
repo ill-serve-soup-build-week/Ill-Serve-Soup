@@ -7,38 +7,108 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
     <script src="js/index.js" async></script>
     <script src="js/about-us.js" async></script>
   </head>
   <body>
-    <header>
-      <h1>I'll Serve Soup</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about-us.html">About Us</a>
-        <a href="#">Donate</a>
-        <a href="#">Volunteer</a>
-        <a href="#">Contact Us</a>
-      </nav>
-    </header>
-    //sections will go here
-
-
-    <footer>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about-us.html">About Us</a>
-        <a href="#">Donate</a>
-        <a href="#">Volunteer</a>
-        <a href="#">Contact Us</a>
-      </nav>
-      <div>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-youtube-square"></i>
+    <section class="banner">
+      <header>
+        <div class="nav container">
+          <h1>I'll Serve Soup</h1>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About&nbsp;Us</a>
+            <a href="#">Donate</a>
+            <a href="#">Volunteer</a>
+            <a href="#">Contact Us</a>
+          </nav>
+        </header>
       </div>
-      <p>Copyright &copy;2019 I'll Serve Soup</p>
+      <h2 class="container mission-statement">Mission Statement<br /><br />
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br />
+      Fugit libero perspiciatis quae, laboriosam consequuntur eos iusto!<br />
+      Perferendis mollitia velit at quia atque cum rem!<br />
+      Fugit quod ex corrupti molestias amet.<br />
+      <a href="login.html"><button class="btn">Login</button></a></h2>
+    </section>
+    <div class="container">
+      <h2>Make a Difference</h2>
+      <section class="content">  
+        <div>
+          <h3>Donate Money</h3>
+          <img src="img/money.jpeg" />
+          <a href="#">
+            <button class="btn">Learn More</button>
+          </a>
+        </div>
+        <div>
+          <h3>Donate Food</h3>
+          <img src="img/donations.jpeg" />
+          <a href="#">
+            <button class="btn">Learn More</button>
+          </a>
+        </div>
+        <div>
+          <h3>Donate Time</h3>
+          <img src="img/volunteer.jpeg" />
+          <a href="#">
+            <button class="btn">Learn More</button>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- <section class="carousel-wrapper">
+      <div class="carousel">
+        <img class="carousel-photo initial"src="img/adult-boil-boiler-210337.jpg" />
+        <img class="carousel-photo" src="img/andrew-welch-116539-unsplash.jpg" />
+        <img class="carousel-photo" src="img/annie-spratt-129941-unsplash.jpg" />
+        <img class="carousel-photo" src="img/annie-spratt-743648-unsplash.jpg" />
+        <img class="carousel-photo" src="img/blue-charity-cheerful-1208694.jpg" />
+        <img class="carousel-photo" src="img/bowl-creamy-cuisine-688802.jpg" />
+        <img class="carousel-photo" src="img/chef-dinner-food-66639.jpg" />
+        <img class="carousel-photo" src="img/kat-yukawa-754726-unsplash.jpg" />
+        <img class="carousel-photo" src="img/katie-smith-104748-unsplash.jpg" />
+        <img class="carousel-photo" src="img/perry-grone-732606-unsplash.jpg" />
+        <img class="carousel-photo" src="img/victoria-kubiaki-1402284-unsplash.jpg" />
+      </div>
+    </section> -->
+
+    <div class="container">
+      <!-- <section>
+        <h3>We Need</h3>
+        <div class="we-need">
+          <img src="img/bags.jpg" />
+          <img src="img/hygiene.jpg" />
+          <img src="img/dental.jpg" />
+          <img src="img/chef.jpg" />
+          <img src="img/volunteer.jpg" />
+          <img src="img/volunteers.jpg" />
+        </div>
+      </section> -->
+      <section class="subscribe">
+        <h3>Subscribe to our Newsletter</h3>
+        <input type="email" name="email" placeholder="Email Address"/><button class="btn">Subscribe</button>
+      </section>
+    </div>
+    <footer>
+      <div class="container">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="#">Donate</a>
+          <a href="#">Volunteer</a>
+          <a href="#">Contact Us</a>
+        </nav>
+        <div class="social">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-youtube-square"></i>
+        </div>
+        <p>Copyright &copy;2019 I'll Serve Soup</p>
+      </div>
     </footer>
   </body>
 </html>
