@@ -5,7 +5,6 @@
     align-content: center;
     height: 1000px;
     width: 100%;
-    
 };
 
 .container-box {
@@ -18,7 +17,13 @@
     margin-bottom: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    // This text is the forgot your password text
+    h4{
+        text-align: right;
+        margin-right: 4%;
+        color: gray;
+        text-decoration: underline; 
+    }
 };
 
 // this box contains to user and password boxes
@@ -47,6 +52,7 @@
     text-align: center;
     font-size: 1.2rem;
     margin-top: 10%;
+    margin-bottom: 4%;
     color: #000080;
 
 };
@@ -71,21 +77,18 @@
     border: .5px solid grey;
     padding-left: 2%;
     
-}
-// This text is the forgot your password text
-.password-forgot{
-    text-align: right;
-    margin-right: 4%;
-    color: gray;
-    text-decoration: underline; 
 };
+
+
 
 // This is the signup button
 .button-container {
     display: flex;
     justify-content: center;
     margin-top: 4%;
-    
+    button:hover {
+        font-size: .9rem;
+    }
 
 
 };
@@ -95,15 +98,13 @@
     margin-top: 3%;
     height: 50px;
     border-radius: 12px;
-    background: linear-gradient(to bottom, dodgerblue 0%, #000080 100%);
+    background: linear-gradient(to bottom, dodgerblue 0%, #4C668C 100%);
     color: white;
     font-size: .8rem;
     font-weight: bold;
 };
 
-button:hover {
-    font-size: .9rem;
-}
+
 
 // This code controls the sign up button at the bottom of the page
 
@@ -117,6 +118,10 @@ button:hover {
     flex-shrink: unset;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    button:hover {
+        font-size: 1.1rem;
+    }
   
 };
 
@@ -126,18 +131,23 @@ button:hover {
     width: 280px;
     border-radius: 12px;
     border: none;
-    background: linear-gradient(to bottom, dodgerblue 0%, #000080 100%);
+    background: linear-gradient(to bottom, dodgerblue 0%, #4C668C 100%);
+
+    
     
 }
 
 .button-top-text{
     margin-bottom: 2%;
-    margin-top: 0;
+    margin-top: 5%;
     font-size: .9rem;
     color: white;
+    font-weight: bold;
 }
 
 .button-bottom-text {
     margin-top: 3%;
+    margin-bottom: 3%;
     color: white;
+    font-weight: bold;
 }
