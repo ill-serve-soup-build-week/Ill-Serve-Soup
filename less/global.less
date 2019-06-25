@@ -36,15 +36,18 @@ p{
   border: 0px;
   display: block;
 }
-a{
+a, .btn, .fab{
+  cursor: pointer;
   text-decoration: none;
 }
- nav{
+a:link, a:visited{
+  color: #FFF;
+}
+nav{
    a{
-    text-decoration: none;
     color: @nav-font;
     &:hover{
-      color: darken(@nav-font, 10%);
+      color: darken(@nav-font, 15%);
     }
   }
 }
