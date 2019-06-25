@@ -267,27 +267,6 @@ footer .social .fa-youtube-square:hover {
   width: 100%;
   margin-top: 0px;
 }
-.we-need {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.we-need img {
-  width: 320px;
-  margin: 10px 0;
-}
-.subscribe {
-  margin-top: 100px;
-}
-.subscribe input {
-  height: 34px;
-  width: 300px;
-  margin-top: 0;
-}
-.subscribe .btn {
-  display: inline;
-  margin: 0;
-}
 .carousel-wrapper {
   overflow: hidden;
 }
@@ -303,6 +282,30 @@ footer .social .fa-youtube-square:hover {
 .initial {
   opacity: 1;
   display: block;
+}
+.we-need {
+  margin-top: 100px;
+}
+.we-need-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.we-need-items img {
+  width: 320px;
+  margin: 10px 0;
+}
+.subscribe {
+  margin-top: 100px;
+}
+.subscribe input {
+  height: 34px;
+  width: 300px;
+  margin-top: 0;
+}
+.subscribe .btn {
+  display: inline;
+  margin: 0;
 }
 .about-us-banner {
   background-image: url('../img/aboutus.jpg');
