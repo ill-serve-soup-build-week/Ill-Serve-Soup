@@ -1,3 +1,35 @@
+@media (max-width: 600px){
+    nav {
+        background-color: @nav-bg;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    nav a{
+        margin-top: 3%;
+        border-top: 1px solid @nav-font;
+        padding-top: 3%;
+
+    }
+
+    .about-us-login-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+    header .nav {
+        height: 200px;
+    }
+
+    .contact-class{
+        margin-bottom: 3%;
+    }
+}
+
+
 .about-us-banner {
     background-image: url('../img/aboutus.jpg');
     background-size: cover;
@@ -11,6 +43,10 @@
 .about-us-login {
     margin-left: 10%;
     margin-bottom: 13%;
+
+    @media (max-width: 600px){
+            margin-bottom: 0;
+    }
 }
 
 .about-us-history {
@@ -28,6 +64,7 @@
 .about-us-team {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     // margin: 8%;
 
 }
