@@ -424,7 +424,7 @@ form .btn {
 .box-holder {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
   height: 1000px;
   width: 100%;
@@ -434,7 +434,7 @@ form .btn {
   width: 300px;
   height: 40%;
   margin: auto;
-  margin-top: 0%;
+  margin-top: 7%;
   border-radius: 15px;
   margin-bottom: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -504,14 +504,15 @@ form .btn {
   justify-content: center;
   flex-shrink: unset;
 }
-.bottom-box button:hover {
-  font-size: 1.3rem;
-}
 .bottom-button {
   width: 280px;
   border-radius: 12px;
   background: linear-gradient(to bottom, dodgerblue 0%, #4C668C 100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bottom-button button:hover {
+  font-size: 1.3rem;
+  background-color: #000080;
 }
 .button-top-text {
   margin-bottom: 2%;
