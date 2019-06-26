@@ -326,7 +326,7 @@ footer .social .fa-youtube-square:hover {
   background-position: center;
   color: #FFF;
   height: 100%;
-  margin-bottom: 50%;
+  margin-bottom: 0%;
 }
 @media (max-width: 600px) {
   .about-us-banner {
