@@ -362,6 +362,9 @@ footer .social .fa-youtube-square:hover {
   height: 500px;
   margin-bottom: 100px;
 }
+.contact-banner .mission-statement {
+  padding: 120px 0 0 0;
+}
 .contact-us {
   width: 40%;
 }
