@@ -7,8 +7,11 @@
     background-size: cover;
     background-position: center;
     color: #FFF;
-    height: 500px;
-    margin-bottom: 100px;
+    height: 100%;
+    margin-bottom: 50%;
+     @media (max-width: 600px) {
+         margin-bottom: 0%;
+     }
 }
 
 
@@ -123,5 +126,20 @@ font-size: 1rem;
         margin-bottom: 3%;
         border-bottom: 1px solid @nav-font;
         padding-bottom: 3%;
+    }
+
+    .mission-statement {
+        padding-bottom: 8%;
+    }
+
+    .about-us-history {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    h2 {
+        margin-left: 5%;
+    }
+    footer .container nav{
+        display: none;
     }
 }

@@ -212,6 +212,7 @@ header .nav nav a {
   padding: 2%;
   display: flex;
   justify-content: center;
+  margin-right: 3%;
 }
 @media (max-width: 600px) {
   .about-us-nav {
@@ -257,11 +258,11 @@ footer .social .fa-youtube-square:hover {
   background-size: cover;
   background-position: center;
   color: #FFF;
-  height: 500px;
-  margin-bottom: 100px;
+  height: 100%;
+  margin-bottom: 50%;
 }
 .mission-statement {
-  padding: 100px 0 0 0;
+  padding: 10% 0 0 0;
   text-align: center;
 }
 .mission-statement .btn {
@@ -324,8 +325,13 @@ footer .social .fa-youtube-square:hover {
   background-size: cover;
   background-position: center;
   color: #FFF;
-  height: 500px;
-  margin-bottom: 100px;
+  height: 100%;
+  margin-bottom: 50%;
+}
+@media (max-width: 600px) {
+  .about-us-banner {
+    margin-bottom: 0%;
+  }
 }
 .about-us-login {
   margin-left: 10%;
@@ -407,6 +413,19 @@ footer .social .fa-youtube-square:hover {
     margin-bottom: 3%;
     border-bottom: 1px solid #FFF;
     padding-bottom: 3%;
+  }
+  .mission-statement {
+    padding-bottom: 8%;
+  }
+  .about-us-history {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  h2 {
+    margin-left: 5%;
+  }
+  footer .container nav {
+    display: none;
   }
 }
 .contact-banner {
