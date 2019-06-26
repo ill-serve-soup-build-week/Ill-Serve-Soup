@@ -5,11 +5,28 @@ header{
     justify-content: space-between;
     align-items: center;
     color: @nav-font;
-    height: 80px;
+    // height: 80px;
+    height: 100%;
     nav{
-      a{
-        margin-left: 20px;
+      a {
+        padding: 2%;
+
+        @media (max-width: 600px){
+          margin-top: 0;
+        }
       }
     }
   }
+}
+
+.about-us-nav {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  margin-right: 3%;
+
+  @media (max-width: 600px){
+    margin-top: 0;
+  }
+  
 }

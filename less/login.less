@@ -1,19 +1,19 @@
 .box-holder {
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     height: 1000px;
     width: 100%;
 };
 
-.container-box {
+.container-box1 {
     border: .2px blur black;
     width: 300px;
     height: 40%;
-    margin-top: 50%;
-    border-radius: 15px;
     margin: auto;
+    margin-top: 7%;
+    border-radius: 15px;
     margin-bottom: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -25,7 +25,6 @@
         text-decoration: underline; 
     }
 };
-
 // this box contains to user and password boxes
 .login-box-holder {
     padding-top: 2px;
@@ -116,12 +115,8 @@
     display: flex; 
     justify-content: center;
     flex-shrink: unset;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    button:hover {
-        font-size: 1.1rem;
-    }
+   
   
 };
 
@@ -130,9 +125,15 @@
 .bottom-button {
     width: 280px;
     border-radius: 12px;
-    border: none;
+    // border: none;
     background: linear-gradient(to bottom, dodgerblue 0%, #4C668C 100%);
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+    button:hover {
+     font-size: 1.3rem;
+     background-color: #000080;
+ }
     
     
 }
@@ -150,4 +151,11 @@
     margin-bottom: 3%;
     color: white;
     font-weight: bold;
+}
+
+
+// This is here to center the bottom sign up button
+.button-location {
+    display: flex;
+    justify-content: center;
 }
