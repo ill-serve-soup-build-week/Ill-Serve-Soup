@@ -6,9 +6,16 @@ header{
     align-items: center;
     color: @nav-font;
     height: 80px;
+    @media @mobile{
+      height: 100px;
+      padding: 20px 0;
+    }
     nav{
       a{
         margin-left: 20px;
+        @media @mobile{
+          margin: 0 10px;
+        }
       }
     }
   }

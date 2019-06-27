@@ -10,12 +10,18 @@ h1{
 }
 h2{
   font-size: 1.65em;
+  @media @mobile{
+    margin-left: 20px;
+  }
 }
 h3{
   font-size: 1.55em;
 }
 header a{
   font-size: 1.3em;
+  @media @mobile{
+    font-size: 1.2em;
+  }
 }
 footer a{
   font-size: 1em;
@@ -26,6 +32,10 @@ p{
 .container{
   max-width: 1000px;
   margin: 0 auto;
+  @media @mobile{
+    display: flex;
+    flex-direction: column;
+  }
 }
 .btn{
   background-color: #4C668C;
