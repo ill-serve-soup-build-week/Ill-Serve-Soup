@@ -389,6 +389,9 @@ footer .social .fa-youtube-square:hover {
 .mission-statement {
   padding: 10% 0 10% 0;
 }
+.logo1 {
+  margin-left: 5%;
+}
 @media (max-width: 600px) {
   nav {
     background-color: #142E54;
@@ -417,7 +420,7 @@ footer .social .fa-youtube-square:hover {
   }
   .about-us-login-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .contact-class {
     margin-bottom: 3%;
@@ -436,6 +439,9 @@ footer .social .fa-youtube-square:hover {
   }
   footer .container nav {
     display: none;
+  }
+  .logo1 {
+    padding: 5%;
   }
 }
 .contact-banner {
