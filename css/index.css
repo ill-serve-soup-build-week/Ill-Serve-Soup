@@ -433,16 +433,11 @@ footer .social .fa-youtube-square:hover {
   background-size: cover;
   background-position: center;
   color: #FFF;
-  height: 100%;
+  height: 500px;
   margin-bottom: 100px;
 }
 .contact-us {
-  width: 80%;
-}
-@media (max-width: 600px) {
-  .contact-us {
-    width: 94%;
-  }
+  width: 40%;
 }
 @media (max-width: 600px) {
   .contact-us {
@@ -472,22 +467,6 @@ form input[name=firstname] {
 }
 form .btn {
   width: 100%;
-}
-footer nav {
-  margin: 4%;
-  width: 100%;
-}
-footer nav p {
-  padding-bottom: 4%;
-}
-div.social {
-  padding-bottom: 3%;
-}
-section.contact-banner {
-  margin-bottom: 8%;
-}
-.contact-us-btn {
-  margin-bottom: 4%;
 }
 .box-holder {
   display: flex;
