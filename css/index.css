@@ -32,7 +32,6 @@ cite,
 code,
 del,
 dfn,
-em,
 img,
 ins,
 kbd,
@@ -41,7 +40,6 @@ s,
 samp,
 small,
 strike,
-strong,
 sub,
 sup,
 tt,
@@ -368,13 +366,19 @@ footer .social .fa-youtube-square:hover {
   width: 150px;
   height: 170px;
 }
-.photo1 h1 {
-  font-size: 0.9rem;
-  padding-left: 20px;
-}
+.photo1 h1,
 .photo1 p {
   padding-left: 20px;
-  font-size: 1rem;
+}
+.photo1 h1 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.photo1 p {
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: normal;
 }
 .container-contact-us {
   display: flex;
@@ -441,9 +445,6 @@ footer .social .fa-youtube-square:hover {
   color: #FFF;
   height: 500px;
   margin-bottom: 100px;
-}
-.contact-banner .mission-statement {
-  padding: 120px 0 0 0;
 }
 .contact-us {
   width: 40%;
