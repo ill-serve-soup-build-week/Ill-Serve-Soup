@@ -196,26 +196,10 @@ header .nav {
   justify-content: space-between;
   align-items: center;
   color: #FFF;
-  height: 100%;
+  height: 80px;
 }
 header .nav nav a {
-  padding: 2%;
-}
-@media (max-width: 600px) {
-  header .nav nav a {
-    margin-top: 0;
-  }
-}
-.about-us-nav {
-  padding: 2%;
-  display: flex;
-  justify-content: center;
-  margin-right: 3%;
-}
-@media (max-width: 600px) {
-  .about-us-nav {
-    margin-top: 0;
-  }
+  margin-left: 20px;
 }
 footer {
   background-color: #142E54;
@@ -256,11 +240,11 @@ footer .social .fa-youtube-square:hover {
   background-size: cover;
   background-position: center;
   color: #FFF;
-  height: 100%;
-  margin-bottom: 50%;
+  height: 500px;
+  margin-bottom: 100px;
 }
 .mission-statement {
-  padding: 10% 0 0 0;
+  padding: 100px 0 0 0;
   text-align: center;
 }
 .mission-statement .btn {
@@ -281,6 +265,27 @@ footer .social .fa-youtube-square:hover {
   width: 100%;
   margin-top: 0px;
 }
+.we-need {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.we-need img {
+  width: 320px;
+  margin: 10px 0;
+}
+.subscribe {
+  margin-top: 100px;
+}
+.subscribe input {
+  height: 34px;
+  width: 300px;
+  margin-top: 0;
+}
+.subscribe .btn {
+  display: inline;
+  margin: 0;
+}
 .carousel-wrapper {
   overflow: hidden;
 }
@@ -297,52 +302,17 @@ footer .social .fa-youtube-square:hover {
   opacity: 1;
   display: block;
 }
-.we-need {
-  margin-top: 100px;
-}
-.we-need-items {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.we-need-items img {
-  width: 320px;
-  margin: 10px 0;
-}
-.subscribe {
-  margin-top: 100px;
-}
-.subscribe input {
-  height: 34px;
-  width: 300px;
-  margin-top: 0;
-}
-.subscribe .btn {
-  display: inline;
-  margin: 0;
-}
 .about-us-banner {
   background-image: url('../img/aboutus.jpg');
   background-size: cover;
   background-position: center;
   color: #FFF;
-  height: 100%;
-  margin-bottom: 0%;
-}
-@media (max-width: 600px) {
-  .about-us-banner {
-    margin-bottom: 0%;
-  }
+  height: 500px;
+  margin-bottom: 100px;
 }
 .about-us-login {
   margin-left: 10%;
   margin-bottom: 13%;
-}
-@media (max-width: 600px) {
-  .about-us-login {
-    margin: 0 auto;
-    margin-bottom: 10%;
-  }
 }
 .about-us-history {
   padding: 3%;
@@ -356,7 +326,6 @@ footer .social .fa-youtube-square:hover {
 .about-us-team {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .about-us-photo-sizes {
   padding: 20px;
@@ -385,64 +354,6 @@ footer .social .fa-youtube-square:hover {
   justify-content: center;
   margin-top: 3%;
   margin-bottom: 3%;
-}
-.mission-statement {
-  padding: 10% 0 10% 0;
-}
-.logo1 {
-  margin-left: 5%;
-}
-@media (max-width: 600px) {
-  nav {
-    background-color: #142E54;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-  }
-  .container {
-    margin-top: 5px;
-  }
-  nav a {
-    margin-top: 3%;
-    border-top: 1px solid #FFF;
-    padding-top: 3%;
-  }
-  .nav {
-    height: 100%;
-  }
-  .about-us-nav {
-    margin-bottom: 0;
-  }
-  .container {
-    height: 100%;
-  }
-  .about-us-login-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact-class {
-    margin-bottom: 3%;
-    border-bottom: 1px solid #FFF;
-    padding-bottom: 3%;
-  }
-  .mission-statement {
-    padding-bottom: 8%;
-  }
-  .about-us-history {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-  h2 {
-    margin-left: 5%;
-  }
-  footer .container nav {
-    display: none;
-  }
-  .logo1 {
-    padding: 5%;
-  }
 }
 .contact-banner {
   background-image: url('../img/blue-charity-cheerful-1260293.jpg');
