@@ -32,7 +32,6 @@ cite,
 code,
 del,
 dfn,
-em,
 img,
 ins,
 kbd,
@@ -41,7 +40,6 @@ s,
 samp,
 small,
 strike,
-strong,
 sub,
 sup,
 tt,
@@ -364,9 +362,6 @@ footer .social .fa-youtube-square:hover {
   color: #FFF;
   height: 500px;
   margin-bottom: 100px;
-}
-.contact-banner .mission-statement {
-  padding: 120px 0 0 0;
 }
 .contact-us {
   width: 40%;
