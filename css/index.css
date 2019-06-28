@@ -144,23 +144,56 @@ h6 {
 h1 {
   font-size: 1.75em;
 }
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.6em;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  h1 {
+    font-size: 1.6em;
+  }
+}
 h2 {
   font-size: 1.65em;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   h2 {
+    font-size: 1.5em;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  h2 {
+    font-size: 1.5em;
     margin-left: 20px;
   }
 }
 h3 {
   font-size: 1.55em;
 }
+@media screen and (max-width: 700px) {
+  h3 {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  h3 {
+    font-size: 1.4em;
+  }
+}
 header a {
   font-size: 1.3em;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   header a {
     font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  header a {
+    font-size: 1.1em;
   }
 }
 footer a {
@@ -168,16 +201,11 @@ footer a {
 }
 p {
   font-size: 1.3em;
+  line-height: 1.3;
 }
 .container {
   max-width: 1000px;
   margin: 0 auto;
-}
-@media (max-width: 600px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .btn {
   background-color: #4C668C;
@@ -214,18 +242,39 @@ header .nav {
   color: #FFF;
   height: 80px;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   header .nav {
     height: 100px;
     padding: 20px 0;
   }
 }
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  header .nav {
+    margin: 0 20px;
+  }
+}
+header .nav .mobile-nav {
+  margin-left: auto;
+  margin-right: 20px;
+  font-size: 2em;
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  header .nav .mobile-nav {
+    display: none;
+  }
+}
+@media (min-width: 1051px) {
+  header .nav .mobile-nav {
+    display: none;
+  }
+}
 header .nav nav a {
   margin-left: 20px;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   header .nav nav a {
     margin: 0 10px;
+    display: none;
   }
 }
 footer {
@@ -277,7 +326,7 @@ footer .social .fa-youtube-square:hover {
 .mission-statement .btn {
   display: inline;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .mission-statement {
     padding: 40px 0 0 0;
   }
@@ -289,17 +338,33 @@ footer .social .fa-youtube-square:hover {
   text-align: center;
   margin-top: 50px;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .content {
     justify-content: center;
     margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .content {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .content div {
+    width: 30%;
+    margin: 0 5px;
   }
 }
 .content div img {
   width: 320px;
   padding-bottom: 0;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
+  .content div img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
   .content div img {
     width: 100%;
   }
@@ -314,18 +379,35 @@ footer .social .fa-youtube-square:hover {
   flex-wrap: wrap;
   text-align: center;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .we-need {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .we-need {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .we-need div {
+    width: 30%;
+    margin: 5px;
   }
 }
 .we-need div img {
   width: 320px;
   margin: 10px 0;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .we-need div img {
     width: 80%;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .we-need div img {
+    width: 100%;
+    margin: 0;
   }
 }
 .subscribe {
@@ -336,7 +418,12 @@ footer .social .fa-youtube-square:hover {
   width: 300px;
   margin-top: 0;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
+  .subscribe input {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
   .subscribe input {
     margin-left: 20px;
   }
@@ -346,7 +433,7 @@ footer .social .fa-youtube-square:hover {
   margin: 0;
   margin-left: 5px;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .subscribe .btn {
     background-color: #4C668C;
     padding: 12px 20px;
@@ -356,9 +443,14 @@ footer .social .fa-youtube-square:hover {
 .carousel-wrapper {
   overflow: hidden;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .carousel-wrapper {
     display: none;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .carousel-wrapper {
+    margin-bottom: 100px;
   }
 }
 .carousel {
@@ -417,6 +509,11 @@ footer .social .fa-youtube-square:hover {
   margin-bottom: 5px;
   font-weight: bold;
 }
+@media screen and (max-width: 700px) {
+  .photo1 h1 {
+    padding: 0;
+  }
+}
 .photo1 p {
   font-size: 0.9em;
   font-style: italic;
@@ -439,13 +536,18 @@ footer .social .fa-youtube-square:hover {
 .contact-us {
   width: 40%;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .contact-us {
-    width: 90%;
+    width: 60%;
   }
 }
-p {
-  line-height: 1.3;
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .contact-us {
+    width: 50%;
+  }
+}
+.contact-us h2 {
+  margin-left: 0;
 }
 form input,
 form textarea {
@@ -473,13 +575,12 @@ form .btn {
   flex-flow: column;
   justify-content: flex-start;
   align-content: center;
-  height: 1000px;
   width: 100%;
+  margin-top: 50px;
 }
 .container-box1 {
   border: 0.2px blur black;
   width: 300px;
-  height: 40%;
   margin: auto;
   margin-top: 7%;
   border-radius: 15px;
@@ -491,6 +592,15 @@ form .btn {
   margin-right: 4%;
   color: gray;
   text-decoration: underline;
+}
+.container-box1 div input {
+  margin: 10px 0;
+}
+.container-box1 div input[type=text] {
+  height: 50px;
+}
+.container-box1 div input[type=checkbox] {
+  margin-right: 5px;
 }
 .login-box-holder {
   padding-top: 2px;
@@ -510,8 +620,6 @@ form .btn {
 .remember-me {
   margin-left: 8%;
   color: gray;
-  display: flex;
-  justify-content: space-around;
   width: 40%;
   font-size: 0.9rem;
 }
