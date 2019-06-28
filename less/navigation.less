@@ -10,11 +10,26 @@ header{
       height: 100px;
       padding: 20px 0;
     }
+    @media @tablet{
+      margin: 0 20px;
+    }
+    .mobile-nav{
+      margin-left: auto;
+      margin-right: 20px;
+      font-size: 2em;
+      @media @tablet{
+        display: none;
+      }
+      @media @desktop{
+        display: none;
+      }
+    }
     nav{
       a{
         margin-left: 20px;
         @media @mobile{
           margin: 0 10px;
+          display: none;
         }
       }
     }
