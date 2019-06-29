@@ -58,7 +58,7 @@ p{
 .btn{
   background-color: #4C668C;
   padding: 10px 50px;
-  color: #FFF;
+  color: #E6E6E6;
   font-size: 1em;
   margin-top: 20px;
   border: 0px;
@@ -67,15 +67,11 @@ p{
 a, .btn, .fab{
   cursor: pointer;
   text-decoration: none;
+  // transition: 0.5s;
 }
 a:link, a:visited{
-  color: #FFF;
+  color: inherit;
 }
-nav{
-   a{
-    color: @nav-font;
-    &:hover{
-      color: darken(@nav-font, 15%);
-    }
-  }
+:hover{
+  transition: 0.5s;
 }

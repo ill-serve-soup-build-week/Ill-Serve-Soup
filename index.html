@@ -7,11 +7,8 @@
     <title>I'll Serve Soup</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/about-us.css">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
-    <script src="js/index.js" async></script>
-    <script src="js/about-us.js" async></script>
+    <script src="js/global.js" async></script>
 </head>
 
 <body>
@@ -20,15 +17,14 @@
       <div class="nav container">
         <h1><a href="index.html">I'll Serve Soup</a></h1>
         <i class="fas fa-bars mobile-nav"></i> 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about-us.html">About&nbsp;Us</a>
-            <a href="#">Donate</a>
-            <a href="#">Volunteer</a>
-            <a href="contact-us.html">Contact Us</a>
+        <nav class="navigation">
+          <a href="index.html">Home</a>
+          <a href="about-us.html">About&nbsp;Us</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="contact-us.html">Contact Us</a>
         </nav>
+      </div>
     </header>
-    </div>
     <h2 class="container mission-statement">Mission Statement<br /><br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br /> Fugit libero perspiciatis quae, laboriosam consequuntur eos iusto!<br /> Perferendis mollitia velit at quia atque cum rem!<br /> Fugit quod ex corrupti
         molestias amet.<br />
         <a href="login.html"><button class="btn">Login</button></a></h2>
@@ -39,21 +35,21 @@
       <section class="content">
         <div>
           <h3>Donate Money</h3>
-          <img src="img/money.jpeg" />
+          <img src="img/money.jpeg" alt="" />
           <a href="#">
               <button class="btn">Learn More</button>
           </a>
         </div>
         <div>
           <h3>Donate Food</h3>
-          <img src="img/donations.jpeg" />
+          <img src="img/donations.jpeg" alt="" />
           <a href="#">
               <button class="btn">Learn More</button>
           </a>
         </div>
         <div>
           <h3>Donate Time</h3>
-          <img src="img/volunteer.jpeg" />
+          <img src="img/volunteer.jpeg" alt="" />
           <a href="#">
               <button class="btn">Learn More</button>
           </a>
@@ -61,58 +57,75 @@
       </section>
     </div>
     
-    <section class="carousel-wrapper">
+    <div class="carousel-wrapper">
       <div class="carousel">
-        <img class="carousel-photo initial"src="img/adult-boil-boiler-210337.jpg" />
-        <img class="carousel-photo" src="img/andrew-welch-116539-unsplash.jpg" />
-        <img class="carousel-photo" src="img/annie-spratt-129941-unsplash.jpg" />
-        <img class="carousel-photo" src="img/annie-spratt-743648-unsplash.jpg" />
-        <img class="carousel-photo" src="img/blue-charity-cheerful-1208694.jpg" />
-        <img class="carousel-photo" src="img/bowl-creamy-cuisine-688802.jpg" />
-        <img class="carousel-photo" src="img/chef-dinner-food-66639.jpg" />
-        <img class="carousel-photo" src="img/kat-yukawa-754726-unsplash.jpg" />
-        <img class="carousel-photo" src="img/katie-smith-104748-unsplash.jpg" />
-        <img class="carousel-photo" src="img/perry-grone-732606-unsplash.jpg" />
-        <img class="carousel-photo" src="img/victoria-kubiaki-1402284-unsplash.jpg" />
+        <img class="carousel-photo initial" src="img/adult-boil-boiler-210337.jpg" alt="" />
+        <img class="carousel-photo" src="img/andrew-welch-116539-unsplash.jpg" alt="" />
+        <img class="carousel-photo" src="img/annie-spratt-129941-unsplash.jpg" alt="" />
+        <img class="carousel-photo" src="img/blue-charity-cheerful-1208694.jpg" alt="" />
+        <img class="carousel-photo" src="img/bowl-creamy-cuisine-688802.jpg" alt="" />
+        <img class="carousel-photo" src="img/chef-dinner-food-66639.jpg" alt="" />
+        <img class="carousel-photo" src="img/kat-yukawa-754726-unsplash.jpg" alt="" />
+        <img class="carousel-photo" src="img/katie-smith-104748-unsplash.jpg" alt="" />
+        <img class="carousel-photo" src="img/perry-grone-732606-unsplash.jpg" alt="" />
+        <img class="carousel-photo" src="img/victoria-kubiaki-1402284-unsplash.jpg" alt="" />
         <div class="next"></div>
         <div class="previous"></div>
       </div>
-    </section>
-      <div class="container">
+    </div>
+
+      <section class="we-need container">
         <h2>We Need</h2>
-        <section class="we-need">
-          <div>
-            <img src="img/bags.jpg" />
+        <div class="we-need-items">
+          <div class="img-container overlay">
+            <img src="img/bags.jpg" alt="" class="image" />
+            <div class="text-container">
+              <div class="text">Bags</div>
+            </div>
           </div>
-          <div>
-            <img src="img/chef.jpg" />
+          <div class="img-container overlay">
+            <img src="img/chef.jpg" alt="" class="image" />
+            <div class="text-container">
+              <div class="text">Chefs</div>
+            </div>
           </div>
-          <div>
-            <img src="img/hygiene.jpg" />
+          <div class="img-container overlay">
+            <img src="img/hygiene.jpg" alt="" class="image" />
+            <div class="text-container">
+              <div class="text">Hygiene Products</div>
+            </div>
           </div>
-          <div>
-            <img src="img/volunteer.jpg" />
+          <div class="img-container overlay">
+            <img src="img/food.jpg" alt="" class="image" />
+            <div class="text-container">
+              <div class="text">Food</div>
+            </div>
           </div>
-          <div>
-            <img src="img/dental.jpg" />
+          <div class="img-container overlay">
+            <img src="img/dental.jpg" alt="" class="image" />
+            <div class="text-container">
+              <div class="text">Dental Products</div>
+            </div>
           </div>
-          <div>
-            <img src="img/volunteers.jpg" />
+          <div class="img-container overlay">
+            <img src="img/volunteers.jpg" alt="" class="image" />
+            <div class="text-container">
+              <div class="text">Volunteers</div>
+            </div>
           </div>
-        </section>
+        </div>
         <section class="subscribe">
             <h2>Subscribe to our Newsletter</h2>
             <input type="email" name="email" placeholder="Email Address" /><button class="btn">Subscribe</button>
         </section>
-    </div>
+    </section>
     <footer>
         <div class="container">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about-us.html">About Us</a>
-                <a href="#">Donate</a>
-                <a href="#">Volunteer</a>
-                <a href="contact-us.html">Contact Us</a>
+            <nav class="navigation">
+              <a href="index.html">Home</a>
+              <a href="about-us.html">About&nbsp;Us</a>
+              <a href="schedule.html">Schedule</a>
+              <a href="contact-us.html">Contact Us</a>
             </nav>
             <div class="social">
                 <i class="fab fa-facebook-square"></i>
