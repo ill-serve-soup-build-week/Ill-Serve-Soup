@@ -51,9 +51,6 @@ center,
 dl,
 dt,
 dd,
-ol,
-ul,
-li,
 fieldset,
 form,
 label,
@@ -109,10 +106,6 @@ section {
 }
 body {
   line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
 }
 blockquote,
 q {
@@ -210,7 +203,7 @@ p {
 .btn {
   background-color: #4C668C;
   padding: 10px 50px;
-  color: #FFF;
+  color: #E6E6E6;
   font-size: 1em;
   margin-top: 20px;
   border: 0px;
@@ -224,22 +217,23 @@ a,
 }
 a:link,
 a:visited {
-  color: #FFF;
+  color: inherit;
 }
-nav a {
-  color: #FFF;
-}
-nav a:hover {
-  color: #d9d9d9;
+:hover {
+  transition: 0.5s;
 }
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: #142E54;
+  z-index: 999;
 }
 header .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #FFF;
+  color: #E6E6E6;
   height: 80px;
 }
 @media screen and (max-width: 700px) {
@@ -271,15 +265,44 @@ header .nav .mobile-nav {
 header .nav nav a {
   margin-left: 20px;
 }
+header .nav nav a:hover {
+  color: #ffffff;
+}
 @media screen and (max-width: 700px) {
-  header .nav nav a {
-    margin: 0 10px;
+  .navigation {
     display: none;
+    position: fixed;
+    right: 0;
+    top: 140px;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+    background-color: #142E54;
+    z-index: 2;
   }
+}
+@media screen and (max-width: 700px) {
+  .navigation a {
+    margin: 20px;
+    font-size: 1.5em;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 700px) {
+  .navigation a:first-child {
+    margin-top: 0;
+  }
+}
+.nav-dropdown {
+  display: flex;
+}
+.mobile-nav {
+  position: absolute;
+  right: 0;
 }
 footer {
   background-color: #142E54;
-  color: #FFF;
+  color: #E6E6E6;
   height: 150px;
   display: flex;
   flex-direction: column;
@@ -289,8 +312,11 @@ footer {
   margin-top: 100px;
 }
 footer nav a {
-  color: #FFF;
+  color: #E6E6E6;
   margin-right: 20px;
+}
+footer nav a:hover {
+  color: #ffffff;
 }
 footer p {
   font-size: 0.8em;
@@ -316,11 +342,11 @@ footer .social .fa-youtube-square:hover {
   background-size: cover;
   background-position: center;
   color: #FFF;
-  height: 500px;
-  margin-bottom: 100px;
+  height: 600px;
+  margin-bottom: 50px;
 }
 .mission-statement {
-  padding: 100px 0 0 0;
+  padding: 200px 0 0 0;
   text-align: center;
 }
 .mission-statement .btn {
@@ -328,7 +354,7 @@ footer .social .fa-youtube-square:hover {
 }
 @media screen and (max-width: 700px) {
   .mission-statement {
-    padding: 40px 0 0 0;
+    padding: 250px 0 0 0;
   }
 }
 .content {
@@ -374,44 +400,47 @@ footer .social .fa-youtube-square:hover {
   margin-top: 0px;
 }
 .we-need {
+  margin-top: 50px;
+}
+.we-need .we-need-items {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
 }
 @media screen and (max-width: 700px) {
-  .we-need {
+  .we-need .we-need-items {
     justify-content: center;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 1050px) {
-  .we-need {
+  .we-need .we-need-items {
     justify-content: center;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 1050px) {
-  .we-need div {
+  .we-need .we-need-items div {
     width: 30%;
     margin: 5px;
   }
 }
-.we-need div img {
+.we-need .we-need-items div img {
   width: 320px;
   margin: 10px 0;
 }
 @media screen and (max-width: 700px) {
-  .we-need div img {
+  .we-need .we-need-items div img {
     width: 80%;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 1050px) {
-  .we-need div img {
+  .we-need .we-need-items div img {
     width: 100%;
     margin: 0;
   }
 }
 .subscribe {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .subscribe input {
   height: 34px;
@@ -454,7 +483,7 @@ footer .social .fa-youtube-square:hover {
   }
 }
 .carousel {
-  margin-top: 100px;
+  margin-top: 50px;
   height: 500px;
   width: 100%;
 }
@@ -466,13 +495,81 @@ footer .social .fa-youtube-square:hover {
   opacity: 1;
   display: block;
 }
+.image:hover {
+  opacity: 0.5;
+}
+.overlay {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+@media screen and (max-width: 700px) {
+  .overlay {
+    width: 100%;
+    height: 100%;
+  }
+}
+.overlay::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  height: 93%;
+  background-color: #142E54;
+  opacity: 0;
+}
+@media screen and (max-width: 700px) {
+  .overlay::before {
+    width: 80%;
+    left: 10%;
+    height: 95%;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .overlay::before {
+    width: 100%;
+    top: -1%;
+    height: 100%;
+  }
+}
+.overlay:hover::before {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+.img-container {
+  position: relative;
+}
+.text-container {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.img-container:hover .text-container {
+  opacity: 1;
+}
+.text {
+  color: #FFF;
+  font-size: 2em;
+  opacity: 0.9;
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .text {
+    font-size: 1.3em;
+  }
+}
 .about-us-banner {
   background-image: url('../img/aboutus.jpg');
   background-size: cover;
   background-position: center;
   color: #FFF;
-  height: 500px;
-  margin-bottom: 100px;
+  height: 600px;
+  margin-bottom: 50px;
 }
 .about-us-login {
   margin-left: 10%;
@@ -481,9 +578,10 @@ footer .social .fa-youtube-square:hover {
 .about-us-history {
   padding: 3%;
   background-color: #142E54;
+  margin-bottom: 50px;
 }
 .about-us-history-font {
-  color: #FFF;
+  color: #E6E6E6;
   margin: 0;
   margin-bottom: 15px;
 }
@@ -530,8 +628,8 @@ footer .social .fa-youtube-square:hover {
   background-size: cover;
   background-position: center;
   color: #FFF;
-  height: 500px;
-  margin-bottom: 100px;
+  height: 600px;
+  margin-bottom: 50px;
 }
 .contact-us {
   width: 40%;
@@ -576,7 +674,17 @@ form .btn {
   justify-content: flex-start;
   align-content: center;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 90px;
+}
+@media screen and (max-width: 700px) {
+  .box-holder {
+    margin-top: 180px;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .box-holder {
+    margin-top: 110px;
+  }
 }
 .container-box1 {
   border: 0.2px blur black;
@@ -685,4 +793,85 @@ form .btn {
 .button-location {
   display: flex;
   justify-content: center;
+}
+.schedule-banner {
+  background-image: url('../img/schedule.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+  height: 600px;
+  margin-bottom: 50px;
+}
+.weekdays {
+  text-align: center;
+  margin: 0 auto;
+}
+.weekdays .weekdays-days {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  margin: 0 auto;
+}
+.weekdays .weekdays-day {
+  display: none;
+  width: 75%;
+}
+.weekdays .weekdays-day table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.weekdays .weekdays-day table tr td,
+.weekdays .weekdays-day table tr th {
+  border: 1px solid #6680A6;
+  padding-left: 20px;
+  text-align: left;
+}
+.weekdays .weekdays-day table tr th {
+  background-color: #4C668C;
+  color: #FFF;
+}
+.weekdays .weekdays-day table tr td p {
+  margin: 10px 0;
+}
+.weekdays .weekdays-day table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.weekdays .weekdays-day .weekdays-day-title {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.weekdays .weekdays-day-focus {
+  display: block;
+}
+.weekdays .weekdays-tabs {
+  display: flex;
+}
+@media screen and (max-width: 700px) {
+  .weekdays .weekdays-tabs {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .weekdays .weekdays-tabs {
+    flex-direction: column;
+  }
+}
+.weekdays .weekdays-tab {
+  padding: 20px 25px;
+  font-size: 1.5em;
+  color: #4C668C;
+  cursor: pointer;
+}
+.weekdays .weekdays-tab:hover {
+  border-bottom: 3px solid #6680A6;
+  border-top: 3px solid #6680A6;
+  color: #6680A6;
+}
+.weekdays .weekdays-tab-focus {
+  border-bottom: 3px solid #4C668C;
+  border-top: 3px solid #4C668C;
 }

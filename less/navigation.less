@@ -1,5 +1,9 @@
 header{
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: @nav-bg;
+  z-index: 999;
   .nav{
     display: flex;
     justify-content: space-between;
@@ -27,11 +31,42 @@ header{
     nav{
       a{
         margin-left: 20px;
-        @media @mobile{
-          margin: 0 10px;
-          display: none;
+        &:hover{
+          color: lighten(@nav-font, 100%);
         }
       }
     }
   }
+}
+.navigation{
+  @media @mobile{
+          display: none;
+          position: fixed;
+          right: 0;
+          top: 140px;
+          height: 100vh;
+          width: 50%;
+          flex-direction: column;
+          background-color: @nav-bg;
+          z-index: 2;
+        }
+  a{
+    @media @mobile{
+      margin: 20px;
+      font-size: 1.5em;
+      text-align: right;
+    }
+  }
+  a:first-child{
+      @media @mobile{
+      margin-top: 0;
+    }
+}
+}
+.nav-dropdown{
+  display: flex;
+}
+.mobile-nav{
+  position: absolute;
+  right: 0;
 }

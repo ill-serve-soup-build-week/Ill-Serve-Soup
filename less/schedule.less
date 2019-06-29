@@ -1,0 +1,80 @@
+.schedule-banner{
+  background-image: url('../img/schedule.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #FFF;
+  height: 600px;
+  margin-bottom: 50px;
+}
+.weekdays{
+  text-align: center;
+  margin: 0 auto;
+  .weekdays-days {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    margin: 0 auto;
+  }
+  .weekdays-day{
+    display: none; 
+    width: 75%;
+    table{
+      width: 100%;
+      border-collapse: collapse;
+      tr{
+        td, th{
+          border: 1px solid #6680A6;
+          padding-left: 20px;
+          text-align: left;
+        }
+        th{
+          background-color: #4C668C;
+          color: #FFF;
+        }
+        td{
+          p{
+            margin: 10px 0;
+          }
+        } 
+      }
+      tr:nth-child(even) {
+         background-color: #dddddd;
+      }
+    }
+    .weekdays-day-title {
+      font-size: 2em;
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+  }
+  .weekdays-day-focus{
+    display: block;
+  }
+  .weekdays-tabs{
+    display: flex;
+    @media @mobile{
+      flex-direction: column;
+    }
+    @media @tablet{
+      flex-direction: column;
+    }
+  }
+  .weekdays-tab{
+    padding: 20px 25px;
+    font-size: 1.5em;
+    color: #4C668C;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 3px solid #6680A6;
+      border-top: 3px solid #6680A6;
+      color: #6680A6;
+    }
+  }
+  .weekdays-tab-focus {
+    border-bottom: 3px solid #4C668C;
+    border-top: 3px solid #4C668C;
+  }
+}
