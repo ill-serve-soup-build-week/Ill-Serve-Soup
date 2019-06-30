@@ -623,15 +623,22 @@ footer .social .fa-youtube-square:hover {
   margin-top: 3%;
   margin-bottom: 3%;
 }
-.night-mode-container {
+.mode-tabs {
   display: flex;
   justify-content: center;
 }
-.night-mode {
+.day-tab {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  width: 15%;
+  margin-top: 15%;
+}
+.night-tab {
   background-color: black;
   color: white;
   padding: 10px;
-  width: 25%;
+  width: 15%;
   margin-top: 15%;
 }
 .contact-banner {

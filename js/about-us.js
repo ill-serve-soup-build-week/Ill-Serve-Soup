@@ -1,55 +1,73 @@
 // Location of necessary changes for night mode
 
 //Body of document
-const container1 = document.querySelector('body')
+const bodyColor = document.querySelector('body')
 
 
 //This is the employee Fonts
-const employeeFont = document.querySelector('body')
+const textColor = document.querySelector('body')
 
 //This is the night mode button
 
-const nightModeBtn = document.querySelector('.night-mode')
+const nightModeBtn = document.querySelector('.night-tab')
+const dayModeBtn = document.querySelector('.day-tab')
 
 
-// This is the link to the button 
-
-const nightButton = document.querySelector('.night-mode-container')
 
 
-//This is the event listener
-// We are using the button to add the listner too and chainging the background
-// of the body
 
-//This function changes the background color
 
-function backgroundChange() {
-    container1.style.background = 'black';
+// Night Mode Function
+
+function nightBackground() {
+    bodyColor.style.background = 'black';
 }
 
 //This changes the font colors for all staff members
 
-function textChange() {
-    employeeFont.style.color = 'white';
+function nightText() {
+    textColor.style.color = 'white';
 }
 
 //This changes the night mode button
 
-function changeBtn() {
-    nightModeBtn.innerHTML = 'Light Mode';
-
+function allNightFunctions() {
+    nightBackground();
+    nightText();
 }
 
 
 
-function allFunctions() {
-    backgroundChange();
-    textChange();
-    changeBtn();
+
+
+
+
+// Day Mode Functions
+
+function dayBackground() {
+    bodyColor.style.background = 'white';
 }
 
-// nightButton.addEventListener('click', function() {
-//     container1.style.background = 'black';
-// });
+//This changes the font colors for all staff members
 
-nightButton.addEventListener('click', allFunctions);
+function dayText() {
+    textColor.style.color = 'black';
+}
+
+//This changes the night mode button
+
+function allDayFunctions() {
+    dayBackground();
+    dayText();
+}
+
+
+
+
+
+
+
+
+
+nightModeBtn.addEventListener('click', allNightFunctions);
+dayModeBtn.addEventListener('click', allDayFunctions);
