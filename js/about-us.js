@@ -28,17 +28,13 @@ function nightBackground() {
 function nightText() {
     textColor.style.color = 'white';
 }
-
 //This changes the night mode button
 
 function allNightFunctions() {
     nightBackground();
     nightText();
+    hoverColor();
 }
-
-
-
-
 
 
 
@@ -60,11 +56,6 @@ function allDayFunctions() {
     dayBackground();
     dayText();
 }
-
-
-
-
-
 
 
 
