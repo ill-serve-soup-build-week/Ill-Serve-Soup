@@ -10,29 +10,71 @@
     margin-left: 10%;
     margin-bottom: 13%;
 }
-.about-us-history {
-    padding: 3%;
-    background-color:@nav-bg;
-    margin-bottom: 50px;
+
+
+
+.history {
+    text-align: center;
+    margin: 0 auto;
+
+    .about-us-tabs{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-tabs {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        margin: 0 auto;
+    }
+    .about-us-tabs {
+        display: flex;
+        @media @mobile {
+            flex-direction: column;
+        }
+        @media @tablet {
+            flex-direction: column;
+        }
+    }
+
+    .about-us-event {
+        display: none;
+        width: 75%;
+    }
+
+    .about-us-events {
+        display: block;
+    }
+
+    .about-us-tab {
+        padding: 20px 25px;
+        font-size: 1.4em;
+        color: #4C668C;
+        cursor: pointer;
+
+        &:hover {
+            border-bottom: 3px solid #6680A6;
+            border-top: 3px solid #6680A6;
+            color: #6680A6;
+        }
+    }
+
+    .about-us-selection {
+        border-bottom: 3px solid #4C668C;
+        border-top: 3px solid #4C668C;
+    }
 }
-.about-us-history-font {
-    color: @nav-font;
-    margin: 0;
-    margin-bottom: 15px;
-}
+
 .about-us-team {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.about-us-photo-sizes {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 170px;
-}
+
+
 .photo1{
     h1, p{
         padding-left: 20px;
@@ -58,3 +100,39 @@
     margin-top: 3%;
     margin-bottom: 3%;
 }
+
+.about-us-photo-sizes {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 170px;
+}
+
+
+
+// //Night mode Button
+
+
+.mode-tabs{
+    display: flex;
+    justify-content: center;
+}
+
+.day-tab {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 15%;
+    margin-top: 15%;
+}
+
+.night-tab {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 15%;
+    margin-top: 15%;
+}
+

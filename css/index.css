@@ -575,28 +575,61 @@ footer .social .fa-youtube-square:hover {
   margin-left: 10%;
   margin-bottom: 13%;
 }
-.about-us-history {
-  padding: 3%;
-  background-color: #142E54;
-  margin-bottom: 50px;
+.history {
+  text-align: center;
+  margin: 0 auto;
 }
-.about-us-history-font {
-  color: #E6E6E6;
-  margin: 0;
-  margin-bottom: 15px;
+.history .about-us-tabs {
+  display: flex;
+  justify-content: center;
+}
+.history .about-tabs {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  margin: 0 auto;
+}
+.history .about-us-tabs {
+  display: flex;
+}
+@media screen and (max-width: 700px) {
+  .history .about-us-tabs {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+  .history .about-us-tabs {
+    flex-direction: column;
+  }
+}
+.history .about-us-event {
+  display: none;
+  width: 75%;
+}
+.history .about-us-events {
+  display: block;
+}
+.history .about-us-tab {
+  padding: 20px 25px;
+  font-size: 1.4em;
+  color: #4C668C;
+  cursor: pointer;
+}
+.history .about-us-tab:hover {
+  border-bottom: 3px solid #6680A6;
+  border-top: 3px solid #6680A6;
+  color: #6680A6;
+}
+.history .about-us-selection {
+  border-bottom: 3px solid #4C668C;
+  border-top: 3px solid #4C668C;
 }
 .about-us-team {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-.about-us-photo-sizes {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-  height: 170px;
 }
 .photo1 h1,
 .photo1 p {
@@ -622,6 +655,32 @@ footer .social .fa-youtube-square:hover {
   justify-content: center;
   margin-top: 3%;
   margin-bottom: 3%;
+}
+.about-us-photo-sizes {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 170px;
+}
+.mode-tabs {
+  display: flex;
+  justify-content: center;
+}
+.day-tab {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  width: 15%;
+  margin-top: 15%;
+}
+.night-tab {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 15%;
+  margin-top: 15%;
 }
 .contact-banner {
   background-image: url('../img/blue-charity-cheerful-1260293.jpg');
